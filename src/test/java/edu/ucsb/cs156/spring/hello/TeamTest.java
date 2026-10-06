@@ -16,11 +16,64 @@ public class TeamTest {
 
     @Test
     public void getName_returns_correct_name() {
-       assert(team.getName().equals("test-team"));
+       assert (team.getName().equals("test-team"));
     }
 
    
     // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
     // 100% mutation coverage (all mutants timed out or killed)
+
+    @Test
+    public void toString_returns_correct_string(){
+        assertEquals("Team(name = test-team, members = [])", team.toString());
+    }
+    
+    @Test
+    public void sameobject_test(){
+        assertEquals(true, team.equals(team));
+    }
+
+    @Test
+    public void different_class_test(){
+        String second_team = "not-a-test-team";
+        assertEquals(false, team.equals(second_team));
+    }
+    @Test
+    public void same_name_different_members_test(){
+        Team second_team = new Team("test-team");
+        second_team.addMember("new-member");
+        assertEquals(false, team.equals(second_team));
+    }
+    @Test
+    public void different_name_test(){
+        Team second_team = new Team("different-team");
+        assertEquals(false, team.equals(second_team));
+    }
+
+    @Test
+     void same_name_same_members_test(){
+        Team second_team = new Team("test-team");
+        assertEquals(true, team.equals(second_team));
+    }
+
+    @Test
+     void same_name_same_members_hashcode(){
+        Team t1 = new Team();
+        t1.setName("foo");
+        t1.addMember("bar");
+        Team t2 = new Team();
+        t2.setName("foo");
+        t2.addMember("bar");
+        assertEquals(t1.hashCode(), t2.hashCode());
+      }
+
+    @Test
+     void hashCodeFunc_test(){
+        Team t = new Team();
+        int result = t.hashCode();
+        int expectedResult = 1;
+        assertEquals(expectedResult, result);
+    }
+
 
 }
