@@ -42,11 +42,11 @@ public class DeveloperTest {
     @Test
     public void getTeam_returns_team_with_correct_members(){
         Team t = Developer.getTeam();
-        assertTrue(t.getMembers().contains("Deserae"), "Team should contain Deserae");
         assertTrue(t.getMembers().contains("Anna"), "Team should contain Anna");
-        assertTrue(t.getMembers().contains("Kathleen"),"Team should contain Kathleen");
+        assertTrue(t.getMembers().contains("Deserae"), "Team should contain Deserae");
         assertTrue(t.getMembers().contains("Isaac"),"Team should contain Isaac");
-        assertTrue(t.getMembers().contains("Nir"),"Team should contain Nir");
-        assertTrue(t.getMembers().contains("John"),"Team should contain John");  
+        assertTrue(t.getMembers().contains("John"),"Team should contain John");
+        assertTrue(t.getMembers().contains("Kathleen"),"Team should contain Kathleen");
+        assertTrue(t.getMembers().contains("Nir"),"Team should contain Nir");  
     }
 }
