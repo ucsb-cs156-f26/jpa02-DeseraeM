@@ -3,7 +3,7 @@
 Repo: https://github.com/ucsb-cs156-f26/jpa02-DeseraeM
 
 
-Deployed at: https://jpa02-deseraem.dokku-06.cs.ucsb.edu/info
+Deployed at: https://jpa02-deseraem.dokku-06.cs.ucsb.edu
 
 
 # About this repo
