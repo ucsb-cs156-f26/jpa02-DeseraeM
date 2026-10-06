@@ -22,7 +22,7 @@ public class DeveloperTest {
 
     @Test
     public void getName_returns_correct_name() {
-        assertEquals("Deserae M", Developer.getName());
+        assertEquals("Deserae", Developer.getName());
     }
 
     // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
@@ -42,11 +42,11 @@ public class DeveloperTest {
     @Test
     public void getTeam_returns_team_with_correct_members(){
         Team t = Developer.getTeam();
-        assertTrue(t.getMembers().contains("Deserae M."), "Team should contain Deserae M.");
-        assertTrue(t.getMembers().contains("Anna G."), "Team should contain Anna G.");
-        assertTrue(t.getMembers().contains("Kathleen C."),"Team should contain Kathleen G.");
-        assertTrue(t.getMembers().contains("Issac G."),"Team should contain Issac G.");
-        assertTrue(t.getMembers().contains("Nir N."),"Team should contain Nir N.");
-        assertTrue(t.getMembers().contains("John Y."),"Team should contain John Y.");  
+        assertTrue(t.getMembers().contains("Deserae"), "Team should contain Deserae");
+        assertTrue(t.getMembers().contains("Anna"), "Team should contain Anna");
+        assertTrue(t.getMembers().contains("Kathleen"),"Team should contain Kathleen");
+        assertTrue(t.getMembers().contains("Issac"),"Team should contain Issac");
+        assertTrue(t.getMembers().contains("Nir"),"Team should contain Nir");
+        assertTrue(t.getMembers().contains("John"),"Team should contain John");  
     }
 }
