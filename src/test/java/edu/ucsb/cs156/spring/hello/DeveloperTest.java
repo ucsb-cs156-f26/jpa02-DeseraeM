@@ -44,7 +44,7 @@ public class DeveloperTest {
         Team t = Developer.getTeam();
         assertTrue(t.getMembers().contains("Anna"), "Team should contain Anna");
         assertTrue(t.getMembers().contains("Deserae"), "Team should contain Deserae");
-        assertTrue(t.getMembers().contains("Isaac G"),"Team should contain Isaac G");
+        assertTrue(t.getMembers().contains("Isaac"),"Team should contain Isaac");
         assertTrue(t.getMembers().contains("John"),"Team should contain John");
         assertTrue(t.getMembers().contains("Kathleen"),"Team should contain Kathleen");
         assertTrue(t.getMembers().contains("Nir"),"Team should contain Nir");  
